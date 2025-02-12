@@ -4,7 +4,7 @@ export interface TProjectInterface {
   _id: Types.ObjectId;
   title: string;
   descriptions: string;
-  projecttools: string;
+  tools: string;
   image: string;
   githubfrontend: string;
   livelink: string;

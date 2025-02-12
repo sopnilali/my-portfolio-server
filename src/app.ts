@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.use(cors({
     origin: [
-        'https://stationery-shop-client-six.vercel.app',
+        'https://my-new-portfolio-sepia-three.vercel.app',
         'http://localhost:3000'
     ], // Allow requests from this specific origi,
     credentials: true 

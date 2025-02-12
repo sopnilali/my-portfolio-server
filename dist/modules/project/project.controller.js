@@ -18,11 +18,11 @@ const sendResponse_1 = __importDefault(require("../../utils/sendResponse"));
 const http_status_1 = __importDefault(require("http-status"));
 const project_service_1 = require("./project.service");
 const createNewProjects = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const { title, descriptions, projecttools, livelink, image, githubfrontend, githubbackend, projectduration, projectstatus } = req.body;
+    const { title, descriptions, tools, livelink, image, githubfrontend, githubbackend, projectduration, projectstatus } = req.body;
     const projectData = {
         title,
         descriptions,
-        projecttools,
+        tools,
         image,
         githubfrontend,
         livelink,

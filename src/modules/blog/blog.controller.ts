@@ -9,12 +9,15 @@ import sendResponse from "../../utils/sendResponse";
 
 const createBlogContent: RequestHandler = catchAsync(
   async (req, res, next) => {
-    const { blogtitle, blogImage, blogContent, blogAuthor} = req.body;
+    const { title, description, publish_date, author_name, blog_image, total_likes } = req.body;
     const blogData: any = {
-      blogtitle,
-      blogImage,
-      blogContent,
-      blogAuthor
+  
+      title,
+      description,
+      publish_date,
+      author_name,
+      blog_image,
+      total_likes,
     };
 
     const result = await blogServices.createBlogContentFromDB(blogData)

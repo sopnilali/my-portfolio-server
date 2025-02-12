@@ -6,12 +6,12 @@ import httpStatus from 'http-status'
 import { ProjectSrvices } from './project.service'
 
 const createNewProjects = catchAsync(async (req: Request, res: Response) => {
-  const { title, descriptions, projecttools, livelink, image, githubfrontend, githubbackend, projectduration, projectstatus } = req.body
+  const { title, descriptions, tools, livelink, image, githubfrontend, githubbackend, projectduration, projectstatus } = req.body
 
   const projectData : any =  {
     title,
     descriptions,
-    projecttools,
+    tools,
     image,
     githubfrontend,
     livelink,

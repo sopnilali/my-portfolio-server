@@ -19,12 +19,14 @@ const blog_service_1 = require("./blog.service");
 const AppError_1 = __importDefault(require("../../errors/AppError"));
 const sendResponse_1 = __importDefault(require("../../utils/sendResponse"));
 const createBlogContent = (0, catchAsync_1.default)((req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const { blogtitle, blogImage, blogContent, blogAuthor } = req.body;
+    const { title, description, publish_date, author_name, blog_image, total_likes } = req.body;
     const blogData = {
-        blogtitle,
-        blogImage,
-        blogContent,
-        blogAuthor
+        title,
+        description,
+        publish_date,
+        author_name,
+        blog_image,
+        total_likes,
     };
     const result = yield blog_service_1.blogServices.createBlogContentFromDB(blogData);
     // blog to save blogData to database

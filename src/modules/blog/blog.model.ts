@@ -1,26 +1,35 @@
-import { model, Schema } from "mongoose";
+import { model, Schema, Types } from "mongoose";
 import { TBlogContent } from "./blog.interface";
 
 
 const blogSchema = new Schema({
-    blogtitle: {
+    _id: {
+        type: Types.ObjectId,
+        auto: true,
+    },
+    title:{
         type: String,
         required: true,
     },
-    blogImage:{
+    description: {
         type: String,
         required: true,
     },
-    blogContent: {
+    publish_date: {
         type: String,
         required: true,
     },
-    blogAuthor: {
+    author_name: {
         type: String,
+        required: true,
+    }, 
+    blog_image: {
+        type: String,
+        required: true,
     },
-    isPublished: {
-        type: Boolean,
-        default: true
+    total_likes: {
+        type: String,
+        required: true,
     },
 }, { timestamps: true }
 )

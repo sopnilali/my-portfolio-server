@@ -12,7 +12,7 @@ const ProjectSchema = new Schema<TProjectInterface>(
       type: String,
       required: true,
     },
-    projecttools: {
+    tools: {
       type: String,
       required: true,
     },

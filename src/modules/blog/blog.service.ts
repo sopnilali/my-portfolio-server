@@ -3,7 +3,6 @@ import Blog from "./blog.model";
 
 const createBlogContentFromDB = async (payload: TBlogContent) => {
     const result = (await Blog.create(payload))
-
     return result;
 }
 const getBlogContentFromDB = async () => {
