@@ -1,6 +1,5 @@
 import { TMessages } from './message.interface';
 import Messages from './message.model';
-import Projects from './message.model';
 
 const createMessagesfromDB = async (
   payload: TMessages
@@ -9,7 +8,7 @@ const createMessagesfromDB = async (
   return result
 }
 const getAllMessagesfromDB = async () => {
-   const result = await Messages.find()
+   const result = await Messages.find().sort({ createdAt: -1 });
   return result
 }
 const getMessagesByIdfromDB = async (messageid: string) => {
