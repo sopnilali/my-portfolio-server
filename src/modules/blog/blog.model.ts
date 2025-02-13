@@ -3,10 +3,6 @@ import { TBlogContent } from "./blog.interface";
 
 
 const blogSchema = new Schema({
-    _id: {
-        type: Types.ObjectId,
-        auto: true,
-    },
     title:{
         type: String,
         required: true,

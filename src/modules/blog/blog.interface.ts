@@ -1,7 +1,7 @@
 import { Types } from "mongoose";
 
 export interface TBlogContent {
-  _id: string
+  _id: Types.ObjectId;
   title: string;
   description: string;
   publish_date: string;
