@@ -9,13 +9,13 @@ import sendResponse from "../../utils/sendResponse";
 
 const createBlogContent: RequestHandler = catchAsync(
   async (req, res, next) => {
-    const { title, description, publish_date, author_name, blog_image, total_likes } = req.body;
+    const { title, description, publish_date, category, blog_image, total_likes } = req.body;
     const blogData: any = {
   
       title,
       description,
       publish_date,
-      author_name,
+      category,
       blog_image,
       total_likes,
     };

@@ -15,7 +15,7 @@ const blogSchema = new Schema({
         type: String,
         required: true,
     },
-    author_name: {
+    category: {
         type: String,
         required: true,
     }, 
