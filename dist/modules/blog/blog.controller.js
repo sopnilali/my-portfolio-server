@@ -68,7 +68,7 @@ const updateBlogContent = (req, res) => __awaiter(void 0, void 0, void 0, functi
         if (result) {
             (0, sendResponse_1.default)(res, {
                 success: true,
-                message: 'Blog updated successfully',
+                message: 'Blog updated successfully!',
                 statusCode: http_status_1.default.OK,
                 data: result,
             });

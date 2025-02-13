@@ -19,7 +19,7 @@ const createMessagesfromDB = (payload) => __awaiter(void 0, void 0, void 0, func
     return result;
 });
 const getAllMessagesfromDB = () => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield message_model_1.default.find();
+    const result = yield message_model_1.default.find().sort({ createdAt: -1 });
     return result;
 });
 const getMessagesByIdfromDB = (messageid) => __awaiter(void 0, void 0, void 0, function* () {

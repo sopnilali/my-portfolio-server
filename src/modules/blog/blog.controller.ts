@@ -72,7 +72,7 @@ const updateBlogContent: RequestHandler = async (req, res) => {
     if (result) {
       sendResponse(res, {
         success: true,
-        message: 'Blog updated successfully',
+        message: 'Blog updated successfully!',
         statusCode: httpStatus.OK,
         data: result,
       });
