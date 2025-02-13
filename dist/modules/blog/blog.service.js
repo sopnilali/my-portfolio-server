@@ -28,7 +28,9 @@ const getSingleBlogContentFromDB = (blogId) => __awaiter(void 0, void 0, void 0,
     return result;
 });
 const updateBlogContentFromDB = (id, payload) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield blog_model_1.default.findByIdAndUpdate(id, payload, { new: true, });
+    const result = yield blog_model_1.default.findByIdAndUpdate(id, payload, {
+        new: true,
+    });
     return result;
 });
 const deleteBlogContentByIdfromDB = (blogid) => __awaiter(void 0, void 0, void 0, function* () {
