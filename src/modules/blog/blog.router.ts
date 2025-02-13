@@ -10,7 +10,7 @@ router.get('/', blogController.getBlogContent)
 
 router.get('/details/:id', blogController.getSingleBlogContent)
 
-router.put('/:id', blogController.updateBlogContent)
+router.patch('/:id', blogController.updateBlogContent)
     
 router.delete('/:id', blogController.deleteBlogContent)
 
