@@ -34,10 +34,32 @@ src/
 │   │   ├── project.model.ts
 │   │   ├── project.router.ts
 │   │   ├── project.service.ts
+│   ├── message/
+│   │   ├── message.controller.ts
+│   │   ├── message.interface.ts
+│   │   ├── message.model.ts
+│   │   ├── message.router.ts
+│   │   ├── message.service.ts
 ├── app.ts
 ├── server.ts
 </pre>
 
+# Message Model 🚟
+<pre>
+   name: {
+      type: String,
+      required: true,
+
+    },
+   email: {
+      type: String,
+      required: true,
+    },
+    message: {
+      type: String,
+      required: true,
+    }
+</pre>
 # Project Model 🚟
 <pre>
     title: {
